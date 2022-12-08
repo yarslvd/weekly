@@ -1,0 +1,48 @@
+@import '../../index.scss';
+
+.events_container {
+    padding-top: 23px;
+    
+    .heading {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .date {
+            font-size: 40px;
+            font-family: 'Oswald';
+        }
+        .holiday {
+            padding: 5px 20px;
+            background-color: #E07A5F;
+            color: #fff;
+            border-radius: 20px;
+        }
+    }
+
+    .board {
+        background-color: rgb(194, 194, 194);
+        height: 93%;
+        border-radius: 20px;
+        position: relative;
+    }
+}
+
+thead {
+    display: none;
+}
+
+table {
+    border-radius: 10px;
+    border: none;
+}
+col {
+    width: 100px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .events_container {
+        height: 100vh;
+    }
+}

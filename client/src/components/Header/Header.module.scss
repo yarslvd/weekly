@@ -1,0 +1,105 @@
+@import '../../index.scss';
+
+.logo {
+    margin-right: 2;
+    justify-content: 'center';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: $main-dark-color;
+    text-decoration: 'none';
+    font-size: '24px';
+}
+
+.login_btn {
+    border-radius: 13px;
+    color: '#1D3557';
+    border-color: '#1D3557';
+    height: 38px;
+    min-width: 90px;
+    text-transform: capitalize;
+}
+
+.signup_btn {
+    border-radius: '13px';
+    color: '#fff';
+    background-color: $main-dark-color;
+    height: '38px';
+    min-width: '100px';
+    text-transform: 'capitalize';
+}
+
+.drawerLinks {
+    color: $main-dark-color;
+    font-size: '28px';
+    font-weight: 600;
+}
+
+.menuItems {
+    display: 'inline';
+    color: '#fff';
+    font-weight: 400;
+    font-size: '13px';
+    background-color: $main-dark-color;
+    padding: '5px 10px';
+    border-radius: '8px';
+}
+
+.menuName {
+    color: '#1D3557';
+    font-weight: 600;
+    font-size: '20px';
+}
+
+.menuLogin {
+    border-radius: 13px;
+    color: #1D3557;
+    border-color: #1D3557;
+    height: 40px;
+    min-width: 120px;
+    text-transform: capitalize;
+}
+
+.menuSignup {
+    border-radius: 13px;
+    color: #F1FAEE;
+    background-color: #1D3557;
+    height: 40px;
+    min-width: 120px;
+    text-transform: capitalize;
+}
+
+.div_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avatar_menu {
+    border-radius: 40px;
+    .avatar_link {
+        text-decoration: none;
+        margin: 0 auto;
+        font-weight: 500;
+    }
+
+    .role {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        gap: 5px;
+        font-weight: 700;
+        color: $main-dark-color;
+        border-bottom: 1px solid rgb(221, 221, 221);
+
+        svg {
+            color: $main-dark-color;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .div_wrapper {
+        display: block;
+    }
+}

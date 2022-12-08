@@ -1,0 +1,24 @@
+@import '../Login/Login.module.scss';
+
+// Go to Login.module.scss to get styles
+
+.content_box {
+    width: 400px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputs {
+        min-width: 300px;
+        .errmsg {
+            visibility: visible;
+        }
+        .offscreen {
+            visibility: hidden;
+        }
+    }
+}

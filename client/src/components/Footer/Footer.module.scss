@@ -1,0 +1,126 @@
+@import '../../index.scss';
+
+footer {
+    background-color: $main-dark-color;
+}
+
+.upContainer {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    border-bottom: 1px rgba(241, 250, 238, 0.212) solid;
+
+    .leftFooter {
+        .description {
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            width: 380px;
+            color: rgba(241, 250, 238, 0.65);
+            margin-bottom: 35px;
+        }
+
+        .iconWrapper {
+            display: flex;
+            gap: 30px;
+
+            .icons {
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+    }
+
+    .rightFooter {
+        display: flex;
+        gap: 60px;
+
+        .info {
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 300;
+                    width: 100%;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                span {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                display: block;
+                color: #fff;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.downContainer {
+    small {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 10px;
+        padding: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .upContainer {
+        flex-direction: column;
+        padding-top: 50px;
+
+        .leftFooter {
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+            .description {
+                margin-bottom: 15px;
+            }
+        }
+
+        .rightFooter {
+            justify-content: space-around;
+
+            .info {
+                h3 {
+                    font-size: 16px;
+                }
+                a {
+                    font-size: 14px;
+                }
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .links {
+                gap: 5px;
+            }
+        }
+    }
+}

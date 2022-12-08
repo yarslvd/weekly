@@ -1,0 +1,22 @@
+{
+    "port": 8000,
+    "HOLIDAY_API_KEY": "AIzaSyBqcGaK4l9b4kCGTv_Gsuan4SsADlpjLl0",
+    "GEONAMES_USERNAME": "kevandee",
+    "db" : {
+        "dialect": "mysql",
+        "host": "localhost",
+        "user": "chronos_admin",
+        "database": "chronos_api",
+        "password": "securepass"
+    },
+    "jwt" : {
+        "secret": "achaikasupersecretkey",
+        "tokenLife": 900,
+        "confirmTokenLife": 120
+    },
+    "email" : {
+        "user": "achaikanodemailer@gmail.com",
+        "password": "zourfavuapmjhdmp"
+    },
+    "secretSalt": "119cf8eca296520d38535f0e967a6222"
+}

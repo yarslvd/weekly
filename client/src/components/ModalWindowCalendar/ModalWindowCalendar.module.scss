@@ -1,0 +1,71 @@
+@import '../../index.scss';
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 450px;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 30px;
+
+    &:focus {
+        outline: none;
+    }
+
+    .heading {
+        color: $main-dark-color;
+        margin: 0;
+        font-size: 26px;
+        margin: 10px 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        margin: 0 auto;
+
+        .colors {
+            margin: 15px auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            .inputColor {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+
+                input[type='radio'] {
+                    position: relative;
+                    width: 30px;
+                    height: 30px;
+                    outline: none;
+                    -webkit-appearance: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    margin: 0;
+                }
+
+                input:checked[type='radio'] {
+                    border: 2px solid $main-dark-color;
+                    cursor: pointer;
+                }
+            }
+        }
+        .bottom {
+            display: flex;
+
+            .saveBtn {
+                padding: 7px 40px;
+                width: 100%;
+            }
+        }
+    }
+}
